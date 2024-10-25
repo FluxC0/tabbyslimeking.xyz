@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+        <base href="https://tabbyslimeking.xyz/" target="_blank">
+        <link rel=stylesheet href="css/style.css?v=7">
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <title>Entry 1</title>
+    </head>
+    
+    <body>
+        
+        <div id="header" w3-include-HTML="views/header.html"></div>
+        
+        
+        <h1 class=qhead>Chrultrabook- The coolest thing you can do to a Chromebook.</h1>
+        <h3 class=ahead>10/1/24</h3>
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE3bgQ5JKL2zYB5IoR7ToqUr9OgZX7C8kmFg&s">
+            <figcaption>image from r/chrultrabook on Reddit.</figcaption>
+            
+        </figure>
+        <div id=content>
+        
+        <br><br><br>
+        
+        <p>
+            Recently, I have gotten my hands on an old chromebook from a school's IT department. As most may know, chromebooks are not capable of much of anything, operating as
+            web browsers on hardware, with most newer ones containing support for Android apps as well. However, this was not enough for me. So, I did some research on how I 
+            could take the Chromebook and make it more.
+        </p>
+        <br><br>
+        <h2 >Presenting: Chr"Ultra"Book</h2>
+        
+        <p>In my efforts, I stumbled across a community of people who seek what I was looking for. the wonderful Chrultrabook community. They have been working tirelessly to make chromebooks run ANYTHING but chromeOS. A huge part of this research is 'Mr. Chromebox', who made a custom firmware specifically for chromebooks to unlock the bootloader and boot any 64 bit UEFI OS. b
+        </p>
+        
+        <br><br>
+        <h2>So, How is it done?</h2>
+        <h3> Step 0: Having the Hardware</h3>
+        <br>
+        <p>You dont need much to make a chrultrabook, but what you do need is this:</p>
+        <ul>
+            <li>A 8GB+ USB Drive to store stock firmware and eventually write a new OS to.</li>
+            <li>A secondary computer or Android phone to use to write a new OS onto the chrultrabook</li>
+            <li>A stable internet connection.</li>
+            <li>A chromebook that is capable of reflashing.</li>
+        </ul>
+        <h3>Step 1: Ensuring Support</h3>
+        <br>
+        <p>Well, first you need to figure out if you have a capable chromebook. In order to do this, you will first need to find the 'board name' of the device. For example, the Asus Chromebook C302 has the board name 'Cave'. You will also need this if you intend to get any help, as you will not get support if you simply say the name of the device. Once you have the board name, you can use <a href="https://docs.chrultrabook.com/docs/firmware/supported-devices.html">this list</a> to find if your device is supported.</p>
+        <h3> Step 2: Final preperations</h3>
+        <br>
+        <p>If and only if you know for a FACT your device is supported as listed on the support list, go ahead and put your chromebook into <a href="https://knowledge.workspace.google.com/kb/how-to-enable-developer-mode-in-chromeos-000004538">Developer Mode</a> (this WILL erase your data. Tread lightly!), and remove the <a href="https://docs.chrultrabook.com/docs/firmware/write-protect.html">Hardware write protect</a> in order to continue. </p>
+        <br>
+        <h3>Step 3: FLASH!</h3>
+        <br>
+        <p>Once you have ensured that ALL restrictions have been removed, enter VT-2 (Ctrl + Alt + →) and type in <code>cd; curl -LOk mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh</code> to initalize the Mr. Chromebox Firmware Utility Script. From there, if possible, select 'Full Rom (UEFI)' and make sure you have an empty USB stick on hand to backup the stock firmware to, just in case something goes wrong. Once you have that done, begin flashing! If it succeeds, great! you are done. you can shutdown safely. if it fails however; DO NOT, AND I REPEAT DO NOT SHUT DOWN! Begin trying to restore stock firmware through the utility using your backup. If it succeeds though, go ahead and turn it off and say goodbye to crOS.</p>
+        <br>
+        <h3>Step 4: Getting a new OS</h3>
+        <br>
+        <p> Now that you have a fresh Chrultrabook on your hands, it's time to make it more than just a paperweight! If you have a second computer on hand, go ahead and write an iso or ventoy to a USB drive to plug into the Chrultrabook. If you do not have a computer but instead have an android phone, you can use <a>EtchDroid</a> to install an image to the usb drive. If you dont even have that; You are in a pretty rough spot. maybe a friend can help you?</p>
+        <h3> Step 5: Installation and Bliss</h3>
+        <br>
+        <p> You can install your altOS (Windows, Linux, even MacOS in soem cases) traditionally, moving through the steps as per usual. Once you have that done, you can rejoice as you have just turned your chromebook into the world's coolest chromebook by getting that pesky operating system off of it.</p>
+        <br>
+        <h3>Celebration and Conclusion</h3>
+        <br>
+        <p>If you have followed this guide as written, you should have yourself a nice Chrultrabook for your enjoyment. I hope you are as passionate for this little community as I am because it breathes life onto these little computers we are either gifted or are stuck with. Thank you for reading, and most importantly...</p>
+        <br><br><br>
+        <h1> Happy Hacking!!!!!!!</h1>
+        
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        <script>w3.includeHTML();</script>
+    </body>
+</html>

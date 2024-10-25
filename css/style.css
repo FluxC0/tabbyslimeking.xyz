@@ -1,0 +1,82 @@
+h1 {
+  font-family: sans-serif;
+  color: white;
+  
+}
+.start { 
+  text-align: center;
+  
+}
+
+nav {
+  border-bottom: 5px solid white;
+}
+
+.crumb:last-child {
+  border-right: 0px;
+  padding-left: 10px;
+}
+
+.crumb:first-child {
+  padding-left: 0px
+}
+
+.crumbs ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.crumb {
+  display: inline-block;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-right: 3px solid white;
+  color: white;
+  padding-left: 10px;
+}
+
+
+.crumb a {
+  display: inline-block;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.crumb a:visited {
+  color: #8f93b8;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.ahead {
+  color: #d6d6d6;
+}
+
+
+#badges {
+    position: absolute;
+    bottom: 0;
+}
+
+#odyssey {
+    position: absolute;
+    bottom 0;
+}
+
+#warn h1 {
+    color: red;
+    font-weight: bold;
+    text-decoration: blink;
+}
+
+#brdr {
+    border-bottom: 5px solid white;
+}
